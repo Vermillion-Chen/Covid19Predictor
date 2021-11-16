@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+    background: rgb(19, 19, 19);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-image: linear-gradient(115deg, rgba(52, 52, 87, 0.8), rgba(36, 10, 53, 0.5)), url("https://thumbs.dreamstime.com/z/medical-ray-imaging-doctor-xray-technician-young-caucasian-patient-85454301.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .blur {
+      backdrop-filter: blur(8px);
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: -2;
+      height: 100%;
+      width: 100%;
+  }
+
+
+.bar-icon {
+    width: 100%;
+    max-width: 55px;
+    height: auto;
+  }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centered {
+    text-align: center;
+}
+.left-margin {
+    margin-left: 30px;
+}
+
+.citation {
+    color: #737475;
+}
+.white {
+    background-color: aliceblue;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(116, 116, 116);
+  color: white;
+  text-align: left;
+}

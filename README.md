@@ -1,4 +1,5 @@
 # COVID 19 Computer Vision Project
 ---
-A single-page web application that will take a CAT or x-ray scan and diagnose whether or not they have had COVID 19. Dataset is provided from https://www.kaggle.com/bachrr/covid-chest-xray
+A web application that will take an x-ray scan and diagnose whether or not the subject of the x-ray scan has COVID 19. 
+Dataset provided from https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
 

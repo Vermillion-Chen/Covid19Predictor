@@ -1,5 +1,3 @@
-#Need to add model, fix predict label function to take multiple, and fix app.route portion
-
 from flask import Flask, render_template, request
 from keras.models import load_model
 from keras.preprocessing import image

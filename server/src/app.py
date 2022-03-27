@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 import numpy as np
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../../static',)
 
 dic = {0 : 'Has COVID', 1 : "Does Not Have COVID"}
 model = load_model('model_V10.h5')

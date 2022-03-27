@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}MAIS COVID-19 Computer Vision Detector{% endblock %}
+{% block content %}
+<h1 class="centered">About</h1>
+<h4 >This webapp was created by Victor Chen for the Fall 2021 semester of MAIS 202. It is a web application that uses 
+    convolution neural networks to detect whether or not COVID 19 is present in an x-ray scan. Based on Python and utilizes the 
+    Tensorflow library created by Google. The accuracy of the model is around 85%, and the dateset used to train the convolutional neural
+    network is available <a href='https://www.kaggle.com/tawsifurrahman/covid19-radiography-database' target='_blank'>here</a>.
+    <br>The GitHub Repository is available <a href='https://github.com/Vermillion-Chen/Covid19Predictor' target='_blank'>here</a>.
+</h4>
+
+<br>
+
+<div class='footer'>The dataset used to train the convolutional neural network has been provided by:
+    <ul>
+        <li>M.E.H. Chowdhury, T. Rahman, A. Khandakar, R. Mazhar, M.A. Kadir, Z.B. Mahbub, K.R. Islam, 
+            M.S. Khan, A. Iqbal, N. Al-Emadi, M.B.I. Reaz, M. T. Islam, “Can AI help in screening Viral 
+            and COVID-19 pneumonia?” IEEE Access, Vol. 8, 2020, pp. 132665 - 132676.</li>
+        <li>Rahman, T., Khandakar, A., Qiblawey, Y., Tahir, A., Kiranyaz, S., Kashem, S.B.A., Islam, 
+            M.T., Maadeed, S.A., Zughaier, S.M., Khan, M.S. and Chowdhury, M.E., 2020. Exploring the 
+            Effect of Image Enhancement Techniques on COVID-19 Detection using Chest X-ray Images. 
+            arXiv preprint arXiv:2012.02238.</li>
+      </ul>
+<!---   
+**Reference:
+<br>[1]https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590858128006-9e640421-6711
+<br>[2]https://github.com/ml-workgroup/covid-19-image-repository/tree/master/png
+<br>[3]https://sirm.org/category/senza-categoria/covid-19/
+<br>[4]https://eurorad.org
+<br>[5]https://github.com/ieee8023/covid-chestxray-dataset
+<br>[6]https://figshare.com/articles/COVID-19_Chest_X-Ray_Image_Repository/12580328
+<br>[7]https://github.com/armiro/COVID-CXNet  
+<br>[8]https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data
+<br>[9]https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia</div>
+--->
+{% endblock %}

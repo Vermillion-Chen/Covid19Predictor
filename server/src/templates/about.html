@@ -2,16 +2,18 @@
 {% block title %}MAIS COVID-19 Computer Vision Detector{% endblock %}
 {% block content %}
 <h1 class="centered">About</h1>
-<h4 >This webapp was created by Victor Chen for the Fall 2021 semester of MAIS 202. It is a web application that uses 
+
+<div class="about"><h4 >This webapp was created by Victor Chen for the Fall 2021 semester of MAIS 202. It is a web application that uses 
     convolution neural networks to detect whether or not COVID 19 is present in an x-ray scan. Based on Python and utilizes the 
     Tensorflow library created by Google. The accuracy of the model is around 85%, and the dateset used to train the convolutional neural
     network is available <a href='https://www.kaggle.com/tawsifurrahman/covid19-radiography-database' target='_blank'>here</a>.
     <br>The GitHub Repository is available <a href='https://github.com/Vermillion-Chen/Covid19Predictor' target='_blank'>here</a>.
-</h4>
+
+</h4><h4>Results: <img src="{{ url_for('static', filename='images/Final_Results.png')}}"></h4>
 
 <br>
 
-<div class='footer'>The dataset used to train the convolutional neural network has been provided by:
+<div class='footer padding'>The dataset used to train the convolutional neural network has been provided by:
     <ul>
         <li>M.E.H. Chowdhury, T. Rahman, A. Khandakar, R. Mazhar, M.A. Kadir, Z.B. Mahbub, K.R. Islam, 
             M.S. Khan, A. Iqbal, N. Al-Emadi, M.B.I. Reaz, M. T. Islam, “Can AI help in screening Viral 
@@ -21,6 +23,9 @@
             Effect of Image Enhancement Techniques on COVID-19 Detection using Chest X-ray Images. 
             arXiv preprint arXiv:2012.02238.</li>
       </ul>
+</div>
+
+</div>
 <!---   
 **Reference:
 <br>[1]https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/#1590858128006-9e640421-6711
